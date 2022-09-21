@@ -16,9 +16,13 @@
   "bugs": {
     "url": "https://github.com/Mariya3067237/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Mariya3067237/frontend-project-44#readme", 
-  
+  "homepage": "https://github.com/Mariya3067237/frontend-project-44#readme",
   "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
