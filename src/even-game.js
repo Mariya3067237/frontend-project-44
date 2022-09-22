@@ -21,7 +21,7 @@ export const evenGame = () => {
         if (answer.toLowerCase === result) {
             i += 1;
             console.log('Correct!');
-        } else {
+        } else if (answer.toLowerCase !== result) {
             console.log(`'${answer.toLowerCase()}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`);
                 break;
         }
