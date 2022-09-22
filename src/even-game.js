@@ -19,6 +19,7 @@ export const evenGame = () => {
         let answer = readlineSync.question('Your answer: ');
         if (answer.toLowerCase === result) {
             console.log('Correct!')
+            i += 1;
         } else {
             console.log(`'${answer.toLowerCase()}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`);
                 break;
