@@ -12,7 +12,7 @@ export const evenGame = () => {
         return 'no';
     };
 
-    for (i = 0; i =< 3;) {
+    for (i = 0; i <= 3;) {
         let checkNumber = getRandomNumber();
         console.log(`Question: ${checkNumber}`);
         let result = checkParity(checkNumber);
@@ -26,4 +26,5 @@ export const evenGame = () => {
     }
     if (i === 3) {
         console.log(`Congratulations, ${name}!`);
+    }
 };
