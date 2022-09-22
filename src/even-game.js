@@ -3,7 +3,7 @@ import { hello } from '../src/cli.js';
 import readlineSync from 'readline-sync';
 
 export const evenGame = () => {
-    hello();
+    const name = hello();
     console.log('Answer "yes" if the number is even, otherwise answer "no".')
     const checkParity = (checkNumber) => {
         if (checkNumber % 2 === 0) {
@@ -24,8 +24,9 @@ export const evenGame = () => {
             console.log(`'${answer.toLowerCase()}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`);
                 break;
         }
+        if (i === 3) {
+            console.log(`Congratulations, ${name}!`);
+        }
     }
-    if (i === 3) {
-        console.log(`Congratulations, ${name}!`);
-    }
+    
 };
