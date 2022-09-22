@@ -16,7 +16,7 @@ export const evenGame = () => {
     while (i < 3) {
         let checkNumber = getRandomNumber();
         console.log(`Question: ${checkNumber}`);
-        const result = checkParity(checkNumber);
+        let result = checkParity(checkNumber);
         let answer = readlineSync.question('Your answer: ');
         if (answer.toLowerCase === result) {
             i += 1;
