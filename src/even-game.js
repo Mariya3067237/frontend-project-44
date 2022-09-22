@@ -10,12 +10,13 @@ export const evenGame = () => {
             return 'yes';
         }
         return 'no';
-    };
-
-    for (let i = 0; i <= 3;) {
+    }
+    
+    let i = 0;
+    while (i < 3) {
         let checkNumber = getRandomNumber();
         console.log(`Question: ${checkNumber}`);
-        let result = checkParity(checkNumber);
+        const result = checkParity(checkNumber);
         let answer = readlineSync.question('Your answer: ');
         if (answer.toLowerCase === result) {
             console.log('Correct!')
@@ -24,9 +25,10 @@ export const evenGame = () => {
             console.log(`'${answer.toLowerCase()}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`);
                 break;
         }
-        if (i === 3) {
-            console.log(`Congratulations, ${name}!`);
-        }
+        
+    }
+    if (i === 3) {
+        console.log(`Congratulations, ${name}!`);
     }
     
 };
