@@ -17,7 +17,7 @@ export const evenGame = () => {
         }
         const randomNumber = getRandomNumber();
         const checkParity = randomNumber % 2 === 0 ? 'yes' : 'no';
-        const result = checkParity(randomNumber);
+        const result = checkParity;
         console.log(`Question: ${randomNumber}`);
         const answer = readlineSync.question('Your answer: ');
         if (answer.toLowerCase !== result) {
