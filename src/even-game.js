@@ -17,12 +17,15 @@ export const evenGame = () => {
         console.log(`Question: ${randomNumber}`);
         const result = checkParity(randomNumber);
         const answer = readlineSync.question('Your answer: ');
-        
-        console.log('Correct!');
-        
-        
-        console.log(`Congratulations, ${name}!`);
-    
-}
+        if (answer.toLowerCase !== result) {
+            console.log(`'${answer.toLowerCase()}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`); 
+            return;
+        } else if (i === 3){
+            console.log(`Congratulations, ${name}!`);
+        } else {
+            console.log('Correct!');
+        }
+
+    }
     
 };
