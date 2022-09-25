@@ -8,3 +8,9 @@ export const hello = () => {
 };
 
 export const getRandomNumber = () => Math.ceil(Math.random()*100);
+
+export const getRandomOperation = () => {
+    const operations = ['+', '-', '*'];
+    const randomIndex = Math.floor(Math.random() * operations.length);
+    return operations[randomIndex];
+};
