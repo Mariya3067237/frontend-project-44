@@ -21,9 +21,10 @@ export const evenGame = () => {
         
         console.log('Correct!');
         
-    }
+    
     if (i === 3) {
         console.log(`Congratulations, ${name}!`);
     }
+}
     
 };
