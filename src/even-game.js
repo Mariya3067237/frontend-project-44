@@ -8,8 +8,6 @@ import readlineSync from 'readline-sync';
 export const evenGame = () => {
     const name = hello();
     console.log('Answer "yes" if the number is even, otherwise answer "no".')
-    
-    
     for (let i = 0; i < 3; i += 1) {
         if (i === 3) {
             console.log(`Congratulations, ${name}!`);
