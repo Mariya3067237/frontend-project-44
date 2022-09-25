@@ -14,15 +14,11 @@ export const evenGame = () => {
     
     let i = 0;
     while (i < 3) {
-        let randomNumber = getRandomNumber();
-        console.log(`Question: ${checkNumber}`);
-        let result = checkParity(checkNumber);
-        let answer = readlineSync.question('Your answer: ');
-        if (answer.toLowerCase !== result) {
-            console.log(`'${answer.toLowerCase()}' is wrong answer ;(. Correct answer was '${result}'\nLet's try again, ${name}!`); 
-            return;
-        }
-        i += 1;
+        const randomNumber = getRandomNumber();
+        console.log(`Question: ${randomNumber}`);
+        const result = checkParity(randomNumber);
+        const answer = readlineSync.question('Your answer: ');
+        
         console.log('Correct!');
         
     }
