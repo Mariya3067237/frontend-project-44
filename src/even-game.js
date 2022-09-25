@@ -15,8 +15,8 @@ export const evenGame = () => {
             console.log(`Congratulations, ${name}!`);
             return;
         }
-        const checkParity = randomNumber % 2 === 0 ? 'yes' : 'no';
         const randomNumber = getRandomNumber();
+        const checkParity = randomNumber % 2 === 0 ? 'yes' : 'no';
         const result = checkParity(randomNumber);
         console.log(`Question: ${randomNumber}`);
         const answer = readlineSync.question('Your answer: ');
