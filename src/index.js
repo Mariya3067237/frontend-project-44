@@ -7,7 +7,6 @@ const game = (gameDescription, question, correctAnswer) => {
     let i = 0;
     while (i < 3) {
         let answer = readlineSync.question(`Question: ${question}\nYour answer: `);
-        console.log(answer);
         if (answer !== correctAnswer) {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
             return;
