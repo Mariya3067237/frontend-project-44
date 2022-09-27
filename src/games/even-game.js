@@ -7,7 +7,7 @@ export const evenGame = () => {
     const randomNumber = getRandomNumber();
     const checkParity = randomNumber % 2 === 0 ? 'yes' : 'no';
     const question = randomNumber;
-    const correctAnswer = checkParity();
+    const correctAnswer = checkParity;
     game();
 };
 
