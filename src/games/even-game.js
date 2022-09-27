@@ -1,5 +1,4 @@
 import { getRandomNumber } from '../cli.js';
-import readlineSync from 'readline-sync';
 import game from '../index.js';
 
 export const evenGame = () => {
