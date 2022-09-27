@@ -6,7 +6,7 @@ const game = (gameDescription, question, correctAnswer) => {
     console.log(gameDescription);
     for (let i = 0; i < 3; i += 1) {
         let answer = readlineSync.question(`Question: ${question}\nYour answer: `);
-        if (answer.toLowerCase !== correctAnswer) {
+        if (answer !== correctAnswer) {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
             return;
         }
