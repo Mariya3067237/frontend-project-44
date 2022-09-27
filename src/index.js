@@ -9,12 +9,11 @@ const game = (gameDescription, question, correctAnswer) => {
         console.log(answer);
         if (answer !== correctAnswer) {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
-            break;
-        } else {
+            return;
+        }
         console.log('Correct!'); 
-    }
-    console.log(`Congratulations, ${name}!`);
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default game;
