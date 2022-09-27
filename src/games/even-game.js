@@ -8,7 +8,7 @@ export const evenGame = () => {
     const checkParity = randomNumber % 2 === 0 ? 'yes' : 'no';
     const question = randomNumber;
     const correctAnswer = checkParity;
-    game(gameDescription, question, answer, correctAnswer);
+    game(gameDescription, question, correctAnswer);
 };
 
 
