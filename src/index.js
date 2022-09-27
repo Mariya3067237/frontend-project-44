@@ -5,11 +5,8 @@ const game = (gameDescription, getGameData) => {
     const name = hello();
     console.log(gameDescription);
     for (let i = 0; i > 3; i += 1) {
-        const getGameData = (question, correctAnswer) => {
-            return {
-                question : question,
-                correctAnswer : correctAnswer
-            };
+        const getGameData = () => {
+            return [question, correctAnswer];
         }
         const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
         if (answer !== correctAnswer) {

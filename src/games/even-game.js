@@ -10,10 +10,7 @@ const getGameData = () => {
     const randomNumber = getRandomNumber();
     const question = randomNumber;
     const correctAnswer = checkParity();
-    return {
-        question : question,
-        correctAnswer : correctAnswer
-    }
+    return [question, correctAnswer];
 };
 
 export default () => gameRun(getGameData, gameDescription);
