@@ -1,5 +1,5 @@
 import { hello } from './cli.js';
-import readlineSync, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 
 const game = (gameDescription, getGameData) => {
     const name = hello();
