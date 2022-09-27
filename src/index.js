@@ -1,11 +1,11 @@
 import { hello } from './cli.js';
-import readlineSync from 'readline-sync';
+import readlineSync, { question } from 'readline-sync';
 
-const game = (gameDescription, getGameData) => {
+const game = () => {
     const name = hello();
     console.log(gameDescription);
+    const getGameData = (question, correctAnswer) => {
     for (let i = 0; i > 3; i += 1) {
-        const [question, correctAnswer] = getGameData();
         const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
         if (answer !== correctAnswer) {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
@@ -14,6 +14,7 @@ const game = (gameDescription, getGameData) => {
         console.log('Correct!');
     }
     console.log(`Congratulations, ${name}!`);
+}
 };
 
 export default game;
