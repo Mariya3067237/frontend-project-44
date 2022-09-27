@@ -13,8 +13,8 @@ const game = (gameDescription, question, correctAnswer) => {
         } else {
         console.log('Correct!'); 
     }
-    }
     console.log(`Congratulations, ${name}!`);
+  }
 };
 
 export default game;
