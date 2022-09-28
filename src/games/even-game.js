@@ -10,6 +10,6 @@ const gameData = () => {
     return [question, correctAnswer];
 };
 
-export default () => game(gameData, description);
+export default () => game(description, gameData);
 
 
