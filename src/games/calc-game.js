@@ -17,8 +17,8 @@ const calc = (num1, num2, operation) => {
     case '*':
       return num1 * num2;
     default:
+      return 'oups';
   }
-  return;
 };
 
 const round = () => {
