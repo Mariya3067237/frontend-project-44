@@ -3,7 +3,6 @@ import { getRandomOperation } from '../cli.js';
 import game from '../index.js';
 
 const description = 'What is the result of the expression?';
-
 const calc = (num1, num2, operation) => {
   switch (operation) {
     case '+':
