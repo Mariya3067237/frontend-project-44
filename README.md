@@ -19,7 +19,7 @@
 ## Калькулятор `brain-calc` 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/9VGSmgJ/86.png" alt=brain-calc></a>
 ## НОД `brain-gcd`
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/0fj6Cqz/87.png" alt="87" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/0fj6Cqz/87.png" alt=brain-gcd></a>
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Mariya3067237/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Mariya3067237/frontend-project-44/actions)
