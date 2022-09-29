@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import readlineSync from 'readline-sync';
 
 export const hello = () => {
