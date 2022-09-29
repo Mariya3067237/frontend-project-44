@@ -22,5 +22,5 @@ const getGameData = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => gameRun(getGameData, gameDescriprion);
+export default () => game(getGameData, gameDescriprion);
 
