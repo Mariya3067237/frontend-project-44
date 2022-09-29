@@ -22,5 +22,5 @@ const round = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => game(description, round);
+export default () => game(descriprion, round);
 
