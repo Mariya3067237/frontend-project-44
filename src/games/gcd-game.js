@@ -14,7 +14,7 @@ const getGreatComonDivider = (num1, num2) => {
   } return divider;
 };
 
-const getGameData = () => {
+const round = () => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const question = `${num1} ${num2}`;
@@ -22,5 +22,5 @@ const getGameData = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => game(getGameData, gameDescriprion);
+export default () => game(description, round);
 
