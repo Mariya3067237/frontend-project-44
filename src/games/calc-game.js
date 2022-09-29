@@ -1,8 +1,13 @@
 import { getRandomNumber } from '../cli.js';
-import { getRandomOperation } from '../cli.js';
 import game from '../index.js';
 
 const description = 'What is the result of the expression?';
+const getRandomOperation = () => {
+  const operations = ['+', '-', '*'];
+  const randomIndex = Math.floor(Math.random() * operations.length);
+  return operations[randomIndex];
+};
+
 const calc = (num1, num2, operation) => {
   switch (operation) {
     case '+':

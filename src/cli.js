@@ -7,10 +7,5 @@ export const hello = () => {
     return name;
 };
 
-export const getRandomNumber = () => Math.ceil(Math.random()*100);
+export const getRandomNumber = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-export const getRandomOperation = () => {
-    const operations = ['+', '-', '*'];
-    const randomIndex = Math.floor(Math.random() * operations.length);
-    return operations[randomIndex];
-};
