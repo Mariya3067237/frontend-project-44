@@ -13,16 +13,15 @@ const progression = (startNum, step, length) => {
 };
 
 const round = () => {
-  let startNum = getRandomNumber();
-  let step = getRandomNumber(1, 10);
-  let length = getRandomNumber(5, 10);
-  let progressionRound = progression(startNum, step, length);
-  let empty = getRandomNumber(1, progressionRound.length);
-  let correctAnswer = String(progressionRound[empty - 1]);
+  const startNum = getRandomNumber();
+  const step = getRandomNumber(1, 10);
+  const length = getRandomNumber(5, 10);
+  const progressionRound = progression(startNum, step, length);
+  const empty = getRandomNumber(1, progressionRound.length);
+  const correctAnswer = String(progressionRound[empty - 1]);
   progressionRound[empty - 1] = '..';
   const question = `${progressionRound.join(' ')}`;
   return [question, correctAnswer];
 };
 
 export default () => game(description, round);
-
