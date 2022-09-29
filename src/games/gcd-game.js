@@ -19,7 +19,7 @@ const round = () => {
   const num2 = getRandomNumber();
   const question = `${num1} ${num2}`;
   const correctAnswer = getGreatCommonDivider(num1, num2);
-  return [question, correctAnswer];
+  return [question, String(correctAnswer)];
 };
 
 export default () => game(descriprion, round);
