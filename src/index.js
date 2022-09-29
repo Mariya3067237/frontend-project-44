@@ -13,8 +13,8 @@ const game = (description, round) => {
             return;
         }
         console.log('Correct!');
-  }
-  console.log(`Congratulations, ${name}!`);
+    }
+    console.log(`Congratulations, ${name}!`);
 };
 
 export default game;
