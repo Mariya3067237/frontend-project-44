@@ -20,7 +20,7 @@ const round = () => {
   let num2 = getRandomNumber();
   let operation = getRandomOperation();
   const question = `${num1} ${operation} ${num2}`;
-  const correctAnswer = String(calculate(num1, num2, operation));
+  const correctAnswer = String(calc(num1, num2, operation));
   return [question, correctAnswer];
 };
 
