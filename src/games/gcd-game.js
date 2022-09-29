@@ -23,4 +23,3 @@ const round = () => {
 };
 
 export default () => game(descriprion, round);
-
