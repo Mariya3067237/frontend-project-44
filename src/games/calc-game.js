@@ -16,13 +16,15 @@ const calc = (num1, num2, operation) => {
       return num1 - num2;
     case '*':
       return num1 * num2;
+    default:
   }
+  return;
 };
 
 const round = () => {
-  let num1 = getRandomNumber();
-  let num2 = getRandomNumber();
-  let operation = getRandomOperation();
+  const num1 = getRandomNumber();
+  const num2 = getRandomNumber();
+  const operation = getRandomOperation();
   const question = `${num1} ${operation} ${num2}`;
   const correctAnswer = String(calc(num1, num2, operation));
   return [question, correctAnswer];

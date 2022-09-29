@@ -16,7 +16,7 @@ const isPrime = (num) => {
 };
 
 const round = () => {
-  let num = getRandomNumber();
+  const num = getRandomNumber();
   const question = num;
   const correctAnswer = isPrime(num) ? 'yes' : 'no';
   return [question, correctAnswer];

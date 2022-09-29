@@ -1,5 +1,5 @@
-import { hello } from "./cli.js";
-import readlineSync from "readline-sync";
+import { hello } from './cli.js';
+import readlineSync from 'readline-sync';
 
 const game = (description, round) => {
   const name = hello();
@@ -10,8 +10,7 @@ const game = (description, round) => {
     answer = answer.toLowerCase();
     if (answer !== correctAnswer) {
       console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`
-      );
+        `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
       return;
     }
     console.log("Correct!");
