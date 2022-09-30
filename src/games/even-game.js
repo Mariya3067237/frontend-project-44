@@ -1,13 +1,13 @@
-import { getRandomNumber } from '../cli.js';
+import { getRandomNumber } from '../get-random-num.js';
 import game from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-const round = () => {
+const isEven = (checkNumber) => checkNumber % 2 === 0;
+const getRoundData = () => {
   const randomNumber = getRandomNumber();
-  const checkParity = randomNumber % 2 === 0 ? 'yes' : 'no';
   const question = randomNumber;
-  const correctAnswer = checkParity;
+  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => game(description, round);
+export default () => game(description, getRoundData);
