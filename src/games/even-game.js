@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../get-random-num.js';
+import getRandomNumber from '../get-random-num.js';
 import game from '../index.js';
 
 const description = 'Answer \'yes\' if number even otherwise answer \'no\'.';
