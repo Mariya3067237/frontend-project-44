@@ -20,6 +20,12 @@
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/9VGSmgJ/86.png" alt="brain-calc"></a>
 ## НОД `brain-gcd`
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/0fj6Cqz/87.png" alt="brain-gcd"></a>
+## Арифметическая прогрессия `brain-progression`
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/7K89xk4/88.png" alt="brain-progression"></a>
+## Простое ли число? `brain-prime`
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/sC7WzJP/89.png" alt="brain-prime"></a>
+
+
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Mariya3067237/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Mariya3067237/frontend-project-44/actions)
