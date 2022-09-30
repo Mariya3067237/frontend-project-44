@@ -1,7 +1,7 @@
 import { getRandomNumber } from '../get-random-num.js';
 import game from '../index.js';
 
-const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer \'yes\' if number even otherwise answer \'no\'.';
 const isEven = (checkNumber) => checkNumber % 2 === 0;
 const getRoundData = () => {
   const randomNumber = getRandomNumber();
