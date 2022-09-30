@@ -1,8 +1,8 @@
-import { getRandomNumber } from '../cli.js';
+import { getRandomNumber } from '../get-random-num.js';
 import game from '../index.js';
 
 const description = 'What number is missing in the progression?';
-const progression = (startNum, step, length) => {
+const getProgression = (startNum, step, length) => {
   const arr = [startNum];
   let elem = startNum;
   for (let i = 1; i < length; i += 1) {
@@ -12,16 +12,16 @@ const progression = (startNum, step, length) => {
   return arr;
 };
 
-const round = () => {
+const getRoundData = () => {
   const startNum = getRandomNumber();
-  const step = getRandomNumber(1, 10);
-  const length = getRandomNumber(5, 10);
-  const progressionRound = progression(startNum, step, length);
-  const empty = getRandomNumber(1, progressionRound.length);
-  const correctAnswer = String(progressionRound[empty - 1]);
-  progressionRound[empty - 1] = '..';
+  const progressionStep = getRandomNumber(1, 10);
+  const lengthProgression = getRandomNumber(5, 10);
+  const progressionRound = getProgression(startNum, progressionStep, lengthProgression);
+  const emptyIndex = getRandomNumber(1, progressionRound.length) - 1
+  const correctAnswer = String(progressionRound[emptyIndex]);
+  progressionRound[emptyIndex] = '..';
   const question = `${progressionRound.join(' ')}`;
   return [question, correctAnswer];
 };
 
-export default () => game(description, round);
+export default () => game(description, getRoundData);
