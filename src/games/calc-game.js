@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../cli.js';
+import { getRandomNumber } from '../get-random-num.js';
 import game from '../index.js';
 
 const description = 'What is the result of the expression?';
@@ -17,17 +17,17 @@ const calc = (num1, num2, operation) => {
     case '*':
       return num1 * num2;
     default:
-      return 'oups';
+      return Error;
   }
 };
 
-const round = () => {
-  const num1 = getRandomNumber();
-  const num2 = getRandomNumber();
+const getRoundData = () => {
+  const numberOne = getRandomNumber();
+  const numberTwo = getRandomNumber();
   const operation = getRandomOperation();
-  const question = `${num1} ${operation} ${num2}`;
-  const correctAnswer = String(calc(num1, num2, operation));
+  const question = `${numberOne} ${operation} ${numberTwo}`;
+  const correctAnswer = String(calc(numberOne, numberTwo, operation));
   return [question, correctAnswer];
 };
 
-export default () => game(description, round);
+export default () => game(description, getRoundData);
