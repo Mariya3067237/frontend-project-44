@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../cli.js';
+import { getRandomNumber } from '../get-random-num.js';
 import game from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -15,11 +15,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const round = () => {
+const getRoundData = () => {
   const num = getRandomNumber();
   const question = num;
   const correctAnswer = isPrime(num) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => game(description, round);
+export default () => game(description, getRoundData);
