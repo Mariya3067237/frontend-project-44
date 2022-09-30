@@ -1,11 +1,12 @@
 import readlineSync from 'readline-sync';
-import { hello } from './cli.js';
+import { hello } from './greeting.js';
 
-const game = (description, round) => {
+const game = (description, getRoundData) => {
   const name = hello();
   console.log(description);
-  for (let i = 0; i < 3; i += 1) {
-    const [question, correctAnswer] = round();
+  let roundsCount = 3;
+  for (let i = 0; i < roundsCount; i += 1) {
+    const [question, correctAnswer] = getRoundData();
     let answer = readlineSync.question(`Question: ${question}\nYour answer: `);
     answer = answer.toLowerCase();
     if (answer !== correctAnswer) {

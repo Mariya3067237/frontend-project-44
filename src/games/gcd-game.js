@@ -1,25 +1,21 @@
-import { getRandomNumber } from '../cli.js';
+import { getRandomNumber } from '../get-random-num.js';
 import game from '../index.js';
 
 const descriprion = 'Find the greatest common divisor of given numbers.';
 const getGreatCommonDivider = (num1, num2) => {
-  const maxNum = Math.max(num1, num2);
-  const minNum = Math.min(num1, num2);
-  let divider = minNum;
-  for (let i = divider; i > 0; i -= 1) {
-    if ((maxNum % i === 0) && (minNum % i === 0)) {
-      divider = i;
-      break;
-    }
-  } return divider;
-};
+  if (num2) {
+      return getGreatCommonDivider(num2, num1 % num2);
+  } else {
+      return Math.abs(num1);
+  }
+}
 
-const round = () => {
-  const num1 = getRandomNumber();
-  const num2 = getRandomNumber();
-  const question = `${num1} ${num2}`;
-  const correctAnswer = getGreatCommonDivider(num1, num2);
+const getRoundData = () => {
+  const numberOne = getRandomNumber();
+  const numberTwo = getRandomNumber();
+  const question = `${numberOne} ${numberTwo}`;
+  const correctAnswer = getGreatCommonDivider(numberOne, numberTwo);
   return [question, String(correctAnswer)];
 };
 
-export default () => game(descriprion, round);
+export default () => game(descriprion, getRoundData);
