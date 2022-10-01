@@ -16,9 +16,8 @@ const isPrime = (num) => {
 };
 
 const getRoundData = () => {
-  const number = getRandomNumber();
   const question = getRandomNumber();
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
