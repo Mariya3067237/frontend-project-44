@@ -17,4 +17,4 @@ const getRoundData = () => {
   return [question, String(correctAnswer)];
 };
 
-export default () => game(descriprion, getRoundData);
+export default () => engineGame(description, getRoundData);
