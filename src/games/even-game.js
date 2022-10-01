@@ -1,5 +1,5 @@
 import getRandomNumber from '../get-random-num.js';
-import game from '../index.js';
+import engineGame from '../index.js';
 
 const description = 'Answer \'yes\' if number even otherwise answer \'no\'.';
 const isEven = (checkNumber) => checkNumber % 2 === 0;
