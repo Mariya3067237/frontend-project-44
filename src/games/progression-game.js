@@ -1,6 +1,5 @@
 import getRandomNumber from '../get-random-num.js';
 import engineGame from '../index.js';
-import game from '../index.js';
 
 const description = 'What number is missing in the progression?';
 const getProgression = (startNum, step, length) => {
