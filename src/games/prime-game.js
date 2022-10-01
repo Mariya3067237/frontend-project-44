@@ -17,9 +17,9 @@ const isPrime = (num) => {
 
 const getRoundData = () => {
   const number = getRandomNumber();
-  const question = number;
+  const question = getRandomNumber();
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => game(description, getRoundData);
+export default () => engineGame(description, getRoundData);
