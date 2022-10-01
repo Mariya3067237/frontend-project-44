@@ -1,5 +1,5 @@
 import getRandomNumber from '../get-random-num.js';
-import game from '../index.js';
+import engineGame from '../index.js';
 
 const description = 'What is the result of the expression?';
 const getRandomOperation = () => {
