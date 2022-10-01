@@ -5,9 +5,9 @@ const description = 'Answer \'yes\' if number even otherwise answer \'no\'.';
 const isEven = (checkNumber) => checkNumber % 2 === 0;
 const getRoundData = () => {
   const randomNumber = getRandomNumber();
-  const question = randomNumber;
+  const question = getRandomNumber();
   const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => game(description, getRoundData);
+export default () => engineGame(description, getRoundData);
