@@ -17,7 +17,7 @@ const calc = (num1, num2, operation) => {
     case '*':
       return num1 * num2;
     default:
-      return Error;
+      throw new Error('Error. Try again');
   }
 };
 
@@ -30,4 +30,4 @@ const getRoundData = () => {
   return [question, correctAnswer];
 };
 
-export default () => game(description, getRoundData);
+export default () => engineGame(description, getRoundData);
