@@ -1,5 +1,3 @@
-
-
 install: 
   npm ci
 
@@ -11,5 +9,4 @@ publish:
 
 make lint:
   npx eslint
-
-
+  
