@@ -1,4 +1,5 @@
 import getRandomNumber from '../get-random-num.js';
+import engineGame from '../index.js';
 import game from '../index.js';
 
 const description = 'What number is missing in the progression?';
@@ -24,4 +25,4 @@ const getRoundData = () => {
   return [question, correctAnswer];
 };
 
-export default () => game(description, getRoundData);
+export default () => engineGame(description, getRoundData);
